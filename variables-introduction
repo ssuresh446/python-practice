@@ -97,3 +97,51 @@ TypeError: 'str' object does not support item assignment
 7
 >>> len(name[1:5])
 4
+>>> 'Variables'
+'Variables'
+>>> num=5
+>>> id(num)
+10914624
+>>> 'id is address of num variable'
+'id is address of num variable'
+>>> a=10
+>>> b=a
+>>> id(a)
+10914784
+>>> id(b)
+10914784
+>>> id(10)
+10914784
+>>> a
+10
+>>> b
+10
+>>> k=10
+>>> id(k)
+10914784
+>>> a=9
+>>> id(a)
+10914752
+>>> id(b)
+10914784
+>>> k=a
+>>> id(k)
+10914752
+>>> b=8
+>>> id(b)
+10914720
+>>> 'if there is any data which is not in use , it will be garbage collected later'
+'if there is any data which is not in use , it will be garbage collected later'
+>>> PI
+Traceback (most recent call last):
+  File "<pyshell#104>", line 1, in <module>
+    PI
+NameError: name 'PI' is not defined
+>>> PI=3.14
+>>> PI
+3.14
+>>> PI=3.15
+>>> PI
+3.15
+>>> type(PI)
+<class 'float'>
