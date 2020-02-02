@@ -1,39 +1,40 @@
+
 >>> 9-8
 1
 >>> 4*6
 24
 >>> 8/2
 4.0
->>> 8/3
+>>> 8/3    ===================giving float value
 2.6666666666666665
->>> 8//3
+>>> 8//3   ===================giving integer , called integer division or floor division
 2
 >>> 8+9-10
 7
->>> 8+9-
+>>> 8+9-   ====================we should follow some syntax
   File "<stdin>", line 1
     8+9-
        ^
 SyntaxError: invalid syntax
 >>> 8+2*3
 14
->>> (8+2)*3
+>>> (8+2)*3   ================BODMAS rule
 30
->>> 2*2*2*2
-16
+>>> 2*2*2*2    
+16===============if we want 2 power 4, we need to type 4 times
 >>> 2**4
 16
 >>> 2*2*2*2
 16
->>> 2*2*2*2*2*2*2*2
+>>> 2*2*2*2*2*2*2*2=========================if we want 2 power 8, we need to type 8 times
 256
->>> 2**8
+>>> 2**8============================** indicates power
 256
 >>> 10/3
 3.3333333333333335
 >>> 10//3
 3
->>> 10%3
+>>> 10%3  =============% modulus gives remainder
 1
 >>> 11%3
 2
@@ -92,8 +93,8 @@ c:/docs/suresh
 c:/docs/naresh
 >>> print('c:\docs\suresh')
 c:\docs\suresh
->>> print('c:\docs\naresh')
+>>> print('c:\docs\naresh')===========\n indicates new line 
 c:\docs
 aresh
->>> print(r'c:\docs\naresh')
+>>> print(r'c:\docs\naresh')==========r means raw string... it neglects \n
 c:\docs\naresh
