@@ -44,3 +44,28 @@ NameError: name 'm' is not defined
 inf
 >>> 'if we want to import only some of the functions, follow the below steps'
 'if we want to import only some of the functions, follow the below steps'
+>>> math.sqrt(9)
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    math.sqrt(9)
+NameError: name 'math' is not defined
+>>> m.sqrt(9)
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    m.sqrt(9)
+NameError: name 'm' is not defined
+>>> from math import sqrt,pow
+>>> sqrt(25)
+5.0
+>>> math.sqrt(25)
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    math.sqrt(25)
+NameError: name 'math' is not defined
+>>> m.sqrt(25)
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    m.sqrt(25)
+NameError: name 'm' is not defined
+>>> 'after importing the required functions , then we can use them directly without math'
+'after importing the required functions , then we can use them directly without math'
