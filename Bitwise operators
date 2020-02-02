@@ -1,0 +1,60 @@
+truth tables concept
+
+>>> 'Bitwise operators'
+'Bitwise operators'
+>>> print('Complement ~ \nAnd & \nOr | \nXor ^ \nLeft shift << \nRight shift')
+Complement ~ 
+And & 
+Or | 
+Xor ^ 
+Left shift << 
+Right shift
+>>> Right shift >>
+SyntaxError: invalid syntax
+>>> '~ also called tilde sign'
+'~ also called tilde sign'
+>>> ~12
+-13
+>>> bin(12)
+'0b1100'
+>>> ' complement of 00001100 is 11110011 and add 1 , which is 2"s complement of 12 '
+' complement of 00001100 is 11110011 and add 1 , which is 2"s complement of 12 '
+>>> "2's complement of -12 is 13"
+"2's complement of -12 is 13"
+>>> 12 & 13
+12
+>>> print("and operation for \n00001100 and \n00001101 is \n00001100")
+and operation for 
+00001100 and 
+00001101 is 
+00001100
+>>> print("and operation for \n00001100 or \n00001101 is \n00001101")
+and operation for 
+00001100 or 
+00001101 is 
+00001101
+>>> 12|13
+13
+>>> 'XOR: if odd number of 1 , then anser is 1'
+'XOR: if odd number of 1 , then anser is 1'
+>>> 12^13
+1
+>>> print(" operation for \n00001100 xor \n00001101 is \n00000001")
+ operation for 
+00001100 xor 
+00001101 is 
+00000001
+>>> 10<<
+SyntaxError: invalid syntax
+>>> 10<<2
+40
+>>> 10<<3
+80
+>>> 'for left shif number of zeros will be added rightside'
+'for left shif number of zeros will be added rightside'
+>>> 5<<2
+20
+>>> 'similarly right shift'
+'similarly right shift'
+>>> 'in right shift we are loosing but in left shift gaining'
+'in right shift we are loosing but in left shift gaining'
