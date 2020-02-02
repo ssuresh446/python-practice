@@ -1,0 +1,24 @@
+>>> 'Number system conversion'
+'Number system conversion'
+>>> bin(25)
+'0b11001'
+>>> 0b11001
+25
+>>> '0 indicates decimal , b indicates binary'
+'0 indicates decimal , b indicates binary'
+>>> 0b101001010111
+2647
+>>> oct(25)
+'0o31'
+>>> 0o31
+25
+>>> hex(25)
+'0x19'
+>>> 0x10
+16
+>>> 0x19
+25
+>>> 0xf
+15
+>>> 0b110011010
+410
