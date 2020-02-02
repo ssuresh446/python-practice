@@ -1,0 +1,40 @@
+
+https://www.youtube.com/watch?v=3dpJrMtxYeo&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=15
+
+>>> 'swapping 2 numbers'
+'swapping 2 numbers'
+>>> a=5
+>>> b=6
+>>> 'we have to use 3rd variable basically'
+'we have to use 3rd variable basically'
+>>> temp = a
+>>> a=b
+>>> b=temp
+>>> a
+6
+>>> b
+5
+>>> 'done, but wasting variable and storage'
+'done, but wasting variable and storage'
+>>> a=a+b
+>>> b=a-b
+>>> a=a-b
+>>> a
+5
+>>> b
+6
+>>> 'here also we are wasting storage for more number of extra bits'
+'here also we are wasting storage for more number of extra bits'
+>>> 'but the best way is as following'
+'but the best way is as following'
+>>> a
+5
+>>> b
+6
+>>> a,b=b,a
+>>> a
+6
+>>> b
+5
+>>> 'this is possible bcz system solves right side first'
+'this is possible bcz system solves right side first'
