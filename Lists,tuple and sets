@@ -1,0 +1,163 @@
+ 
+>>> 'Lists'
+'Lists'
+>>> nums=[42,64,1357,13,42]
+>>> nums
+[42, 64, 1357, 13, 42]
+>>> nums[0]
+42
+>>> nums[10]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> nums[4]
+42
+>>> nums[1:4]
+[64, 1357, 13]
+>>> nums[1:]
+[64, 1357, 13, 42]
+>>> nums[:4]
+[42, 64, 1357, 13]
+>>> nums[-4]
+64
+>>> name=['suresh','kumar','sai']
+>>> name
+['suresh', 'kumar', 'sai']
+>>> name=names
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'names' is not defined
+>>> names=name
+>>> names
+['suresh', 'kumar', 'sai']
+>>> names[1]
+'kumar'
+>>> names[1:2]
+['kumar']
+>>> names[1:3]
+['kumar', 'sai']
+>>> values=[9.6,'ssr',9]
+>>> mil=[nums,names]
+>>> mil
+[[42, 64, 1357, 13, 42], ['suresh', 'kumar', 'sai']]
+>>> nums
+nums
+>>> nums.
+nums.append(   nums.count(    nums.insert(   nums.reverse(  
+nums.clear(    nums.extend(   nums.pop(      nums.sort(     
+nums.copy(     nums.index(    nums.remove(   
+>>> nums.append(great)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'great' is not defined
+>>> nums.append('great')
+>>> nums
+[42, 64, 1357, 13, 42, 'great']
+>>> nums.insert(2,34))
+  File "<stdin>", line 1
+    nums.insert(2,34))
+                     ^
+SyntaxError: invalid syntax
+>>> nums.insert(2,34)
+>>> nums
+[42, 64, 34, 1357, 13, 42, 'great']
+>>> nums.pop(2)
+34
+>>> nums
+[42, 64, 1357, 13, 42, 'great']
+>>> nums.pop()
+'great'
+>>> nums
+[42, 64, 1357, 13, 42]
+>>> del nums.
+nums.append(   nums.count(    nums.insert(   nums.reverse(  
+nums.clear(    nums.extend(   nums.pop(      nums.sort(     
+nums.copy(     nums.index(    nums.remove(   
+>>> del nums[2:]
+>>> nums
+[42, 64]
+>>> nums.extend(32,53,13,57)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: extend() takes exactly one argument (4 given)
+>>> nums.extend([32,53,13,57])
+>>> nums
+[42, 64, 32, 53, 13, 57]
+>>> min(nums)
+13
+>>> max(nums)
+64
+>>> sum(nums)
+261
+>>> nums.sort()
+>>> nums
+[13, 32, 42, 53, 57, 64]
+>>> nums.reverse()
+>>> nums
+[64, 57, 53, 42, 32, 13]
+>>> nums.
+nums.append(   nums.count(    nums.insert(   nums.reverse(  
+nums.clear(    nums.extend(   nums.pop(      nums.sort(     
+nums.copy(     nums.index(    nums.remove(   
+>>> nums.clear(2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: clear() takes no arguments (1 given)
+>>> nums.clear(2,3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: clear() takes no arguments (2 given)
+>>> nums.clear()
+>>> nums
+[]
+>>> nums.append([52,4765,32,87,23,9])
+>>> nums
+[[52, 4765, 32, 87, 23, 9]]
+>>> nums.clear(4:)
+  File "<stdin>", line 1
+    nums.clear(4:)
+                ^
+SyntaxError: invalid syntax
+>>> nums.clear(4:6)
+  File "<stdin>", line 1
+    nums.clear(4:6)
+                ^
+SyntaxError: invalid syntax
+>>> nums.clear()
+>>> nums
+[]
+>>> 'set and tuple'
+'set and tuple'
+>>> 'tuple is same as list, but tuple is immutable .. we cant change value'
+'tuple is same as list, but tuple is immutable .. we cant change value'
+>>> tup=(325,6474,2,67,2,67,325)
+>>> tup
+(325, 6474, 2, 67, 2, 67, 325)
+>>> tup[1]
+6474
+>>> tup[6]
+325
+>>> tup[6]=56
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> tup.
+tup.count(  tup.index(  
+>>> 'if we dont want to change the value, we use tuple'
+'if we dont want to change the value, we use tuple'
+>>> s={23,67,89,23,67,78}
+>>> s
+{89, 67, 78, 23}
+>>> 'set never follows the sequence'
+'set never follows the sequence'
+>>> s
+{89, 67, 78, 23}
+>>> d={23,578,12,67,578}
+>>> d
+{578, 67, 12, 23}
+>>> s[2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object does not support indexing
+>>> 'it doesnot show index value bcz it does not follow a sequence'
+'it doesnot show index value bcz it does not follow a sequence'
