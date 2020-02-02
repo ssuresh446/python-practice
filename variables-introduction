@@ -1,0 +1,99 @@
+>>> print("Variables")
+Variables
+>>> 2+3
+5
+>>> x=2
+>>> print("variable is a container where we can store any value")
+variable is a container where we can store any value
+>>> y=3
+>>> x+y
+5
+>>> x=9
+>>> x
+9
+>>> x+y
+12
+>>> print("we can change the value of variable , x")
+we can change the value of variable , x
+>>> print("it can automatically detect what ever the value is wheather it is integer , float or string")
+it can automatically detect what ever the value is wheather it is integer , float or string
+>>> type(x)
+<class 'int'>
+>>> abc
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'abc' is not defined
+>>> x+19
+28
+>>> _+10
+38
+>>> print("we can use the output of previous operation by nusing _")
+we can use the output of previous operation by nusing _
+>>> _+_
+76
+>>> name='youtube'
+>>> name
+'youtube'
+>>> name+'rocks'
+'youtuberocks'
+>>> name 'rocks'
+  File "<stdin>", line 1
+    name 'rocks'
+               ^
+SyntaxError: invalid syntax
+>>> name
+'youtube'
+>>> name[0]
+'y'
+>>> name[3]
+'t'
+>>> name[5]
+'b'
+>>> name[7]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> print("because \nyoutube\n0123456 is the convention")
+because 
+youtube
+0123456 is the convention
+>>> name[-1]
+'e'
+>>> print("because \n y o u t u b e\n-7-6-5-4-3-2-1 is the convention")
+because 
+ y o u t u b e
+-7-6-5-4-3-2-1 is the convention
+>>> name[-4]
+'t'
+>>> name[0:7]
+'youtube'
+>>> name[0:3]
+'you'
+>>> name[1:3]
+'ou'
+>>> name[1:]
+'outube'
+>>> name[:6]
+'youtub'
+>>> name[:3]
+'you'
+>>> name[1:10]
+'outube'
+>>> name[0:10]
+'youtube'
+>>> name[0:7]
+'youtube'
+>>> name[0:3]='my'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> 'strings in python are immutable, we can not change'
+'strings in python are immutable, we can not change'
+>>> 'my'+name[0:3]
+'myyou'
+>>> 'my'+name[3:7]
+'mytube'
+>>> len(name)
+7
+>>> len(name[1:5])
+4
