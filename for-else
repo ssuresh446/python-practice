@@ -1,0 +1,21 @@
+#if we want to print all the numbers in the set
+nums=[34,7,23,98,20,890]
+for num in nums:
+    if num % 5 == 0:
+        print(num)
+        break
+else:
+    print('no number divisible by 5')
+nums1=[34,7,23,98,23,89]
+for num1 in nums1:
+    if num1 % 5 == 0:
+        print(num1)
+        break
+else:
+    print('no number divisible by 5')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+20
+no number divisible by 5
+
+Process finished with exit code 0
