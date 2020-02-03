@@ -58,3 +58,34 @@ even
 Process finished with exit code 0
 ==============================================================================
 #nested if condition
+x=int(input('enter a value:'))
+r=x%2
+if r==0:
+    print('even')
+    if x>1000:
+        print('x is big value')
+    else:
+        print('x is small value')
+else:
+    print('odd')
+    if x>1000:
+        print('x is big value')
+    else:
+        print('x is small value')
+  #  or
+if r==1:
+    print('odd')
+    if x>1000:
+        print('x is big value')
+    else:
+        print('x is small value')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter a value:45
+odd
+x is small value
+odd
+x is small value
+
+Process finished with exit code 0
