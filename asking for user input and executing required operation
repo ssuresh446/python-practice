@@ -92,6 +92,31 @@ enter an expression:3-7+18
 14
 
 Process finished with exit code 0
+=============================================================================
+#if we want to take input from command line while we are running the code
+x=argv[1]
+y=argv[2]
+z=x+y
+print(z)
 
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 2, in <module>
+    x=argv[1]
+NameError: name 'argv' is not defined
+
+Process finished with exit code 1
+=================================================================================
+import sys
+x=int(sys.argv[1])
+y=int(sys.argv[2])
+z=x+y
+print(z)
+
+
+output:
+ansible-practice@k8master:~/suresh/python.practice$ python3 argv.py 2 4
+6
 
     
