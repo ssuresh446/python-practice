@@ -35,3 +35,91 @@ suresh
 
 Process finished with exit code 0
 ============================================
+for i in range(10):
+    print(i)
+for i in range(45,53):
+    print(i)
+for i in range(45,53,2):
+    print(i)
+for i in range(44,20,-2):
+    print(i)
+print('we can neglect the number which ever we dont want,here am neglecting 5 multiples by using if condition')
+for i in range(20,200,4):
+    if i%5!=0:
+        print(i)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+45
+46
+47
+48
+49
+50
+51
+52
+45
+47
+49
+51
+44
+42
+40
+38
+36
+34
+32
+30
+28
+26
+24
+22
+we can neglect the number which ever we dont want,here am neglecting 5 multiples by using if condition
+24
+28
+32
+36
+44
+48
+52
+56
+64
+68
+72
+76
+84
+88
+92
+96
+104
+108
+112
+116
+124
+128
+132
+136
+144
+148
+152
+156
+164
+168
+172
+176
+184
+188
+192
+196
+
+Process finished with exit code 0
