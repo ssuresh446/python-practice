@@ -1,3 +1,5 @@
+# break : if the condition satisfied , break the execution in that loop.
+#continue : if the condition satisfied , skip the execution and continue for the next step in that loop.
 x=int(input('how many candles you want?'))
 i=1
 while i<=x:
