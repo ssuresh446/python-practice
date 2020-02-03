@@ -1,0 +1,37 @@
+# for loop: for loop normally works with sequence , while works with condition
+x=['sanaka','suresh','8790923747','3.8']
+print(x)
+print('but if we want to display the values one by one')
+x=['sanaka','suresh','8790923747','3.8']
+for i in x:
+    print(i)
+print('we can do as follow also')
+y='suresh'
+for i in y:
+    print(i)
+print('we can mention the list in the for loop itself also')
+for i in ['ram','26','suresh','200']:
+    print(i)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+['sanaka', 'suresh', '8790923747', '3.8']
+but if we want to display the values one by one
+sanaka
+suresh
+8790923747
+3.8
+we can do as follow also
+s
+u
+r
+e
+s
+h
+we can mention the list in the for loop itself also
+ram
+26
+suresh
+200
+
+Process finished with exit code 0
+============================================
