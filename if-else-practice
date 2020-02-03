@@ -14,3 +14,28 @@ output:
 Process finished with exit code 0
 ===========================================================================
 but i have doubt , without any condition... what is getting executed
+===========================================================================
+
+#in python the block at if condition is called suit.
+if False:
+    print('i am right')
+print('Bye')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Bye
+
+Process finished with exit code 0
+==============================================================================
+
+#in python the block at if condition is called suit.
+if True:
+    print('i am right')
+print('Bye')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+i am right
+Bye
+
+Process finished with exit code 0
+============================================================================
+we getting Bye in uneven way , this is because .. we should follow indentation, same space below statements of if condition
