@@ -57,7 +57,7 @@ even
 
 Process finished with exit code 0
 ==============================================================================
-#nested if condition
+#nested if condition, we know it by indentation(if inside if condition)
 x=int(input('enter a value:'))
 r=x%2
 if r==0:
