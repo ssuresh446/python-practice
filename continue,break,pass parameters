@@ -127,3 +127,24 @@ this is multiple of 3
 14
 
 Process finished with exit code 0
+========================================
+for i in range(1,16):
+    if i%2==0:
+        pass
+    else:
+        print(i)
+print('Bye')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+1
+3
+5
+7
+9
+11
+13
+15
+Bye
+
+Process finished with exit code 0
