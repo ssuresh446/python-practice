@@ -53,5 +53,30 @@ enter 'b' value:0
 x+y is small value
 
 Process finished with exit code 0
+=========================================================================
+#charecter practice
+ch1=input('enter any char:')
+print(ch1)
+ch2=input('enter any char:')
+print(ch2)
+#it is dispaying full word but we want first charecter
+ch3=input('enter any char:')
+print(ch3[0])
+      #or
+ch4=input('enter any char:')[0]
+print(ch4)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter any char:s
+s
+enter any char:suresh
+suresh
+enter any char:suresh
+s
+enter any char:suresh
+s
+
+Process finished with exit code 0
+
 
     
