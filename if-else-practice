@@ -1,0 +1,16 @@
+if True:
+    print('i am right')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+i am right
+
+Process finished with exit code 0
+==========================================================================
+if False:
+    print('i am right')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+
+Process finished with exit code 0
+===========================================================================
+but i have doubt , without any condition... what is getting executed
