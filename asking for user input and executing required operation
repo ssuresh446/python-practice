@@ -77,6 +77,21 @@ enter any char:suresh
 s
 
 Process finished with exit code 0
+==========================================================================
+#using eval funtion
+result=input('enter an expression:')
+print(result)
+#but its taking as string
+result1=eval(input('enter an expression:'))
+print(result1)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter an expression:3-7+18
+3-7+18
+enter an expression:3-7+18
+14
+
+Process finished with exit code 0
 
 
     
