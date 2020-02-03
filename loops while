@@ -1,0 +1,45 @@
+print('suresh')
+print('suresh')
+print('suresh')
+print('suresh')
+print('suresh')
+print('suresh')
+print('suresh')
+print('suresh')
+print('suresh')
+print('suresh')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+
+Process finished with exit code 0
+=========================================================================================
+#usinf while
+i=1
+while i<=10:
+    print('suresh')
+    i=i+1
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+
+Process finished with exit code 0
+=======================================================================================
