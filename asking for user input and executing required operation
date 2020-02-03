@@ -12,7 +12,7 @@ else:
 #following is failed output
 /home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
 enter 'a' value:243
-<class 'str'>
+<class 'str'>=======even we given a number, it is considering as string , so we need to convert to int in the next task
 enter 'b' value:84
 <class 'str'>
 Traceback (most recent call last):
@@ -23,5 +23,35 @@ TypeError: '>=' not supported between instances of 'str' and 'int'
 
 Process finished with exit code 1
 =======================================================================
+#how to get input from user and convert string into int
+x=input("enter 'a' value:")
+print(type(x))
+y=input("enter 'b' value:")
+print(type(y))
+x=int(input("enter 'a' value:"))
+print(type(x))
+y=int(input("enter 'b' value:"))
+print(type(y))
+z=x+y
+print(x+y)
+if z>=1000:
+    print('x+y is big value')
+else:
+    print('x+y is small value')
+    
+  output:
+  /home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter 'a' value:78676
+<class 'str'>
+enter 'b' value:34345454
+<class 'str'>
+enter 'a' value:666
+<class 'int'>
+enter 'b' value:0
+<class 'int'>
+666
+x+y is small value
+
+Process finished with exit code 0
 
     
