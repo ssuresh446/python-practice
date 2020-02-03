@@ -1,0 +1,28 @@
+x=10
+for i in range(2,x):
+    if x%i==0:
+        print('x is not a prime number')
+        break
+else:
+    print('prime')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+x is not a prime number
+
+Process finished with exit code 0
+
+=====================================================================
+x=11
+for i in range(2,x):
+    if x%i==0:
+        print('x is not a prime number')
+        break
+else:
+    print('prime')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+prime
+
+Process finished with exit code 0
