@@ -62,5 +62,54 @@ suresh
 
 Process finished with exit code 0
 ========================================================
+i=1
+while i<=4:
+    print('suresh')
+    i=i+1
+    j = 1
+    while j<=4:
+        print('is good boy')
+        j=j+1
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+suresh
+is good boy
+is good boy
+is good boy
+is good boy
+suresh
+is good boy
+is good boy
+is good boy
+is good boy
+suresh
+is good boy
+is good boy
+is good boy
+is good boy
+suresh
+is good boy
+is good boy
+is good boy
+is good boy
+
+Process finished with exit code 0
+===================================
+i=1
+while i<=4:
+    print(' \nsuresh',end="")
+    i=i+1
+    j = 1
+    while j<=4:
+        print(' good',end="")
+        j=j+1
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+ 
+suresh good good good good 
+suresh good good good good 
+suresh good good good good 
+suresh good good good good
+Process finished with exit code 0
 
 
