@@ -39,3 +39,22 @@ Bye
 Process finished with exit code 0
 ============================================================================
 we getting Bye in uneven way , this is because .. we should follow indentation, same space below statements of if condition
+=======================================================================
+x=int(input('enter a value:'))
+r=x%2
+if r==0:
+    print('even')
+else:
+    print('odd')
+  #  or
+if r==1:
+    print('odd')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter a value:4
+even
+
+Process finished with exit code 0
+==============================================================================
+#nested if condition
