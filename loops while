@@ -43,3 +43,24 @@ suresh
 
 Process finished with exit code 0
 =======================================================================================
+i=10
+while i>=1:
+    print('suresh')
+    i=i-1
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+suresh
+
+Process finished with exit code 0
+========================================================
+
+
