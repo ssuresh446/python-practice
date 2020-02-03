@@ -11,3 +11,32 @@ output:
 
 Process finished with exit code 0
 =================================================
+for i in range(4):
+    for j in range(i):
+        print('#',end="")
+    print()
+    
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+
+#
+##
+###
+
+Process finished with exit code 0
+
+=============================
+for i in range(4):
+    for j in range(4-i):
+        print('#',end="")
+    print()
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+####
+###
+##
+#
+
+Process finished with exit code 0
+======================================
+
