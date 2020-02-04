@@ -1,0 +1,56 @@
+from array import *
+#with out doing above step we cant use arrays in python
+print('difference between arrays and lists is , lists can have any type of data where as array should have same type weather it is int, float and char.')
+print('arrays dont have specific size, we can shrink by pop and expand by append ')
+#array-name=array('type of the data in the array called type code',[data])
+a1=array('i',[24,57,23,89,29]) #i for unsigned integer positive and negative
+print(a1)
+print(a1[3])
+for i in range(5): #or range(lenth)
+    print(a1[i])
+a1.reverse()
+print(a1)
+print(a1.typecode) # gives type of array data
+print(a1.buffer_info()) # gives size of array
+a1.append(50)
+print(a1)
+print(a1)
+a1.pop()
+print(a1)
+a2=array(a1.typecode,[(a-2)*2 for a in a1])
+print(a2)
+u1=array('u',['r','h','y'])
+print(u1)
+print(u1[1])
+print(u1[2])
+c=0
+while c<len(u1):
+    print(u1[c])
+    c+=1
+    
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+difference between arrays and lists is , lists can have any type of data where as array should have same type weather it is int, float and char.
+arrays dont have specific size, we can shrink by pop and expand by append 
+array('i', [24, 57, 23, 89, 29])
+89
+24
+57
+23
+89
+29
+array('i', [29, 89, 23, 57, 24])
+i
+(140164556374472, 5)
+array('i', [29, 89, 23, 57, 24, 50])
+array('i', [29, 89, 23, 57, 24, 50])
+array('i', [29, 89, 23, 57, 24])
+array('i', [54, 174, 42, 110, 44])
+array('u', 'rhy')
+h
+y
+r
+h
+y
+
+Process finished with exit code 0
