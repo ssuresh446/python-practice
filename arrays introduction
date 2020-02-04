@@ -54,3 +54,75 @@ h
 y
 
 Process finished with exit code 0
+==========================================================================
+from array import *
+print('the following steps belong to integer array')
+int=array('i',[27,409,6,25,90])
+for x in range(len(int)):
+    print(int[x])
+print(int)
+a=0
+while a<len(int):
+    print(int[a])
+    a+=1
+int1=array(int.typecode,[10*a for a in int])
+print(int1)
+print('the following steps belong to charecter array')
+char=array('u',['s','u','r','e','s','h'])
+for y in range(len(char)):
+    print(char[y])
+print(char)
+b=0
+while b<len(char):
+    print(char[b])
+    b+=1
+print('the following steps belong to float array')
+float=array('f',[2.0,27.9,35.8,5.55])
+for z in range(len(float)):
+    print(float[z])
+print(float)
+c=0
+while c<len(float):
+    print(float[c])
+    c+=1
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+the following steps belong to integer array
+27
+409
+6
+25
+90
+array('i', [27, 409, 6, 25, 90])
+27
+409
+6
+25
+90
+array('i', [270, 4090, 60, 250, 900])
+the following steps belong to charecter array
+s
+u
+r
+e
+s
+h
+array('u', 'suresh')
+s
+u
+r
+e
+s
+h
+the following steps belong to float array
+2.0
+27.899999618530273
+35.79999923706055
+5.550000190734863
+array('f', [2.0, 27.899999618530273, 35.79999923706055, 5.550000190734863])
+2.0
+27.899999618530273
+35.79999923706055
+5.550000190734863
+
+Process finished with exit code 0
