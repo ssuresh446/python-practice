@@ -126,3 +126,57 @@ array('f', [2.0, 27.899999618530273, 35.79999923706055, 5.550000190734863])
 5.550000190734863
 
 Process finished with exit code 0
+=====================================
+from array import *
+a1=array('i')
+print(a1)
+x=int(input('enter the length of the array'))
+for i in range(x):
+    y=int(input('enter the next value in the array : '))
+    a1.append(y)
+print(a1)
+a2=array('u')
+print(a2)
+y=int(input('enter the length of the array'))
+for j in range(y):
+    z=input('enter the next char in the array : ')
+    a2.append(z)
+print(a2)
+a3=array('f')
+print(a3)
+f=int(input('enter the length of the array'))
+for i in range(f):
+    d=float(input('enter the next value in the array : '))
+    a3.append(d)
+print(a3)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+array('i')
+enter the length of the array6
+enter the next value in the array : 11
+enter the next value in the array : 22
+enter the next value in the array : 33
+enter the next value in the array : 44
+enter the next value in the array : 55
+enter the next value in the array : 66
+array('i', [11, 22, 33, 44, 55, 66])
+array('u')
+enter the length of the array6
+enter the next char in the array : s
+enter the next char in the array : u
+enter the next char in the array : r
+enter the next char in the array : e
+enter the next char in the array : s
+enter the next char in the array : h
+array('u', 'suresh')
+array('f')
+enter the length of the array6
+enter the next value in the array : 1.1
+enter the next value in the array : 2.2
+enter the next value in the array : 3.3
+enter the next value in the array : 4.4
+enter the next value in the array : 5.5
+enter the next value in the array : 6.6
+array('f', [1.100000023841858, 2.200000047683716, 3.299999952316284, 4.400000095367432, 5.5, 6.599999904632568])
+
+Process finished with exit code 0
