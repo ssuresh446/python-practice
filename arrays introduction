@@ -204,6 +204,6 @@ array('i', [11, 22, 33])
 enter the value you want to search : 22
 sorry,your number not found in the list
 the position of your number is :  1
-sorry,your number not found in the list
+
 
 Process finished with exit code 0
