@@ -1,0 +1,104 @@
+>>> 'Dictionaries'
+							       
+'Dictionaries'
+>>> family_order={1:'venkat',2:'babu',3:'appu',4:'amar'}
+							       
+>>> family_order[1]
+							       
+'venkat'
+>>> family_order[3]
+							       
+'appu'
+>>> family_order[4]
+							       
+'amar'
+>>> family_order[5]
+							       
+Traceback (most recent call last):
+  File "<pyshell#233>", line 1, in <module>
+    family_order[5]
+KeyError: 5
+>>> family_order.pop(3)
+							       
+'appu'
+>>> family_order
+							       
+{1: 'venkat', 2: 'babu', 4: 'amar'}
+>>> family_order[3]
+							       
+Traceback (most recent call last):
+  File "<pyshell#236>", line 1, in <module>
+    family_order[3]
+KeyError: 3
+>>> family_order[3]='appu'
+							       
+>>> family_order
+							       
+{1: 'venkat', 2: 'babu', 4: 'amar', 3: 'appu'}
+>>> family_order.get(1,'not mentioned')
+							       
+'venkat'
+>>> family_order.get(2,'not mentioned')
+							       
+'babu'
+>>> family_order.get(3,'not mentioned')
+							       
+'appu'
+>>> family_order.get(5,'not mentioned')
+							       
+'not mentioned'
+>>> family_order.keys
+							       
+<built-in method keys of dict object at 0x7f261e597168>
+>>> 'lets create dictionary '
+							       
+'lets create dictionary '
+>>> husbands=['venkat','babu','appu','amar']
+							       
+>>> wifes=['peddhamma','renuka','rathamma','padma']
+							       
+>>> gur=dict(zip(husbands,wifes))
+							       
+>>> gur
+							       
+{'venkat': 'peddhamma', 'babu': 'renuka', 'appu': 'rathamma', 'amar': 'padma'}
+>>> gur['amar']
+							       
+'padma'
+>>> gur['amar']
+							       
+'padma'
+>>> family={'venkat': ['peddhamma':'ramaiah':['ajay':'chandhu']], 'babu': 'renuka', 'appu': 'rathamma', 'amar': 'padma'}
+							       
+SyntaxError: invalid syntax
+>>> family={'venkat': ['peddhamma':'ramaiah':['ajay':'chandhu'], 'babu': 'renuka', 'appu': 'rathamma', 'amar': 'padma'}
+	    
+SyntaxError: invalid syntax
+>>> gur['amar']
+	    
+'padma'
+>>> family={'venkat': 'peddhamma':'ramaiah':['ajay':'chandhu']}, 'babu': 'renuka', 'appu': 'rathamma', 'amar': 'padma'}
+							       
+SyntaxError: invalid syntax
+>>> gur['amar']
+							       
+'padma'
+>>> family={'venkat':{'peddhamma':'ramaiah':['ajay':'chandhu']}, 'babu': 'renuka', 'appu': 'rathamma', 'amar': 'padma'}
+							       
+SyntaxError: invalid syntax
+>>> family={'venkat':['peddhamma':'ramaiah':'ajay':'chandhu'], 'babu': 'renuka', 'appu': 'rathamma', 'amar': 'padma'}
+							       
+SyntaxError: invalid syntax
+>>> family={'venkat':{'peddhamma':'ramaiah'['ajay':'chandhu']}, 'babu': 'renuka', 'appu': 'rathamma', 'amar': 'padma'}
+							       
+Traceback (most recent call last):
+  File "<pyshell#258>", line 1, in <module>
+    family={'venkat':{'peddhamma':'ramaiah'['ajay':'chandhu']}, 'babu': 'renuka', 'appu': 'rathamma', 'amar': 'padma'}
+TypeError: slice indices must be integers or None or have an __index__ method
+>>> family={'venkat':['peddhamma':'ramaiah','ajay':'chandhu'], 'babu': 'renuka', 'appu': 'rathamma', 'amar': 'padma'}
+							       
+SyntaxError: invalid syntax
+>>> gur={'venkat':'ram','babu':['seetha':'hanish'],'appu':'srinu','amar':{'anna':'kundan','me':'myson','sai':'kid'}}
+							       
+SyntaxError: invalid syntax
+>>> gur={'venkat':'ram','babu':['seetha','hanish'],'appu':'srinu','amar':{'anna':'kundan','me':'myson','sai':'kid'}}
