@@ -180,3 +180,30 @@ enter the next value in the array : 6.6
 array('f', [1.100000023841858, 2.200000047683716, 3.299999952316284, 4.400000095367432, 5.5, 6.599999904632568])
 
 Process finished with exit code 0
+====================================================
+from array import *
+a1=array('i')
+print(a1)
+x=int(input('enter the length of the array : '))
+for i in range(x):
+    y=int(input('enter the next value in the array : '))
+    a1.append(y)
+print(a1)
+a=int(input('enter the value you want to search : '))
+for i in range(x):
+    if a1[i]==a:
+        print('the position of your number is : ',i)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+array('i')
+enter the length of the array3
+enter the next value in the array : 11
+enter the next value in the array : 22
+enter the next value in the array : 33
+array('i', [11, 22, 33])
+enter the value you want to search : 22
+sorry,your number not found in the list
+the position of your number is :  1
+sorry,your number not found in the list
+
+Process finished with exit code 0
