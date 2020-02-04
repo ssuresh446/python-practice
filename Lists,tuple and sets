@@ -127,6 +127,8 @@ SyntaxError: invalid syntax
 >>> nums
 []
 >>> 'set and tuple'
+
+https://www.youtube.com/watch?v=Mf7eFtbVxFM&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=7
 'set and tuple'
 >>> 'tuple is same as list, but tuple is immutable .. we cant change value'
 'tuple is same as list, but tuple is immutable .. we cant change value'
