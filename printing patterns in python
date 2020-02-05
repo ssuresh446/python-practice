@@ -98,3 +98,28 @@ $  $  $  $  $  $  $  $  $  $  $  $  $  $  $
 
 Process finished with exit code 0
 
+=========================================================
+x=int(input('enter the size of pattern : '))
+for i in range(x):
+    for j in range(x):
+        if i+j>7 and i>=j : #(3*(x-1)/2) and i-j<((x+1)/2) and i>(x-1)/2:
+            print('$  ',end="")
+        else:
+            print('   ',end="")
+
+    print()
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/pattern-in-generalized-format-done-by-my-own.py
+enter the size of pattern : 9
+                           
+                           
+                           
+                           
+            $              
+         $  $  $           
+      $  $  $  $  $        
+   $  $  $  $  $  $  $     
+$  $  $  $  $  $  $  $  $  
+
+Process finished with exit code 0
+===============================================================
