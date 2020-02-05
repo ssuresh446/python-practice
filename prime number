@@ -1,0 +1,67 @@
+x=10
+for i in range(2,x):
+    if x%i==0:
+        print('x is not a prime number')
+        break
+else:
+    print('prime')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+x is not a prime number
+
+Process finished with exit code 0
+
+=====================================================================
+x=11
+for i in range(2,x):
+    if x%i==0:
+        print('x is not a prime number')
+        break
+else:
+    print('prime')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+prime
+
+Process finished with exit code 0
+===============================================
+w=int(input('enter a value from which you want prime numbers : '))
+x=int(input('enter a value upto which you want prime numbers : '))
+for i in range(w,x):
+    for j in range(2,i):
+        if i%j==0:
+            print(i,'is not prime in the given range : ',(w,x))
+            break
+    else:
+        print(i, 'is prime number in the given range : ',(w,x))
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter a value from which you want prime numbers : 123
+enter a value upto which you want prime numbers : 145
+123 is not prime in the given range :  (123, 145)
+124 is not prime in the given range :  (123, 145)
+125 is not prime in the given range :  (123, 145)
+126 is not prime in the given range :  (123, 145)
+127 is prime number in the given range :  (123, 145)
+128 is not prime in the given range :  (123, 145)
+129 is not prime in the given range :  (123, 145)
+130 is not prime in the given range :  (123, 145)
+131 is prime number in the given range :  (123, 145)
+132 is not prime in the given range :  (123, 145)
+133 is not prime in the given range :  (123, 145)
+134 is not prime in the given range :  (123, 145)
+135 is not prime in the given range :  (123, 145)
+136 is not prime in the given range :  (123, 145)
+137 is prime number in the given range :  (123, 145)
+138 is not prime in the given range :  (123, 145)
+139 is prime number in the given range :  (123, 145)
+140 is not prime in the given range :  (123, 145)
+141 is not prime in the given range :  (123, 145)
+142 is not prime in the given range :  (123, 145)
+143 is not prime in the given range :  (123, 145)
+144 is not prime in the given range :  (123, 145)
+
+Process finished with exit code 0
