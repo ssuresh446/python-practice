@@ -1,0 +1,44 @@
+import sys
+sys.setrecursionlimit(18)
+print(sys.getrecursionlimit())
+i=0
+def greet():
+    global i
+    i+=1
+    print('Hello',i)
+    greet()
+greet()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 10, in <module>
+    greet()
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 9, in greet
+    greet()
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 9, in greet
+    greet()
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 9, in greet
+    greet()
+  [Previous line repeated 12 more times]
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 8, in greet
+    print('Hello',i)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+18
+Hello 1
+Hello 2
+Hello 3
+Hello 4
+Hello 5
+Hello 6
+Hello 7
+Hello 8
+Hello 9
+Hello 10
+Hello 11
+Hello 12
+Hello 13
+Hello 14
+Hello 15
+
+Process finished with exit code 1
