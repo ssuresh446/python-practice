@@ -1,0 +1,84 @@
+from numpy import *
+a=array([
+    [2,3,4,5],
+    [6,8,3,5],
+    [2,6,3,90],
+    [1,6,0,400]
+
+
+
+        ])
+print(a)
+
+print(a.diagonal())
+print(a.sort())
+print(a.conjugate())
+print(a.shape)
+print(a.ndim)
+print(a.imag)
+print(a.nbytes)
+print(a.reshape(1,4,4))
+print(a.reshape(2,2,4))
+print("a.reshape(number of matrices, number of rows , number of columns : but total number shultd be equal to number of elements in a")
+print(2*a)
+print(conjugate(a+2j))
+
+
+m1=matrix('1 2 3 ; 4 5 6 ; 7 8 9')
+print(m1)
+print(m1.diagonal())
+
+m2=matrix('2 4 6 ; 3 5 9 ; 1 4 0')
+print(m2)
+print(m1*m2)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+[[  2   3   4   5]
+ [  6   8   3   5]
+ [  2   6   3  90]
+ [  1   6   0 400]]
+[  2   8   3 400]
+None
+[[  2   3   4   5]
+ [  3   5   6   8]
+ [  2   3   6  90]
+ [  0   1   6 400]]
+(4, 4)
+2
+[[0 0 0 0]
+ [0 0 0 0]
+ [0 0 0 0]
+ [0 0 0 0]]
+128
+[[[  2   3   4   5]
+  [  3   5   6   8]
+  [  2   3   6  90]
+  [  0   1   6 400]]]
+[[[  2   3   4   5]
+  [  3   5   6   8]]
+
+ [[  2   3   6  90]
+  [  0   1   6 400]]]
+a.reshape(number of matrices, number of rows , number of columns : but total number shultd be equal to number of elements in a
+[[  4   6   8  10]
+ [  6  10  12  16]
+ [  4   6  12 180]
+ [  0   2  12 800]]
+[[  2.-2.j   3.-2.j   4.-2.j   5.-2.j]
+ [  3.-2.j   5.-2.j   6.-2.j   8.-2.j]
+ [  2.-2.j   3.-2.j   6.-2.j  90.-2.j]
+ [  0.-2.j   1.-2.j   6.-2.j 400.-2.j]]
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+[[1 5 9]]
+[[2 4 6]
+ [3 5 9]
+ [1 4 0]]
+[[ 11  26  24]
+ [ 29  65  69]
+ [ 47 104 114]]
+
+
+Process finished with exit code 0
