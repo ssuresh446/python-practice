@@ -117,6 +117,47 @@ output:
 
 Process finished with exit code 0
 ==================================================================
+a=10
+def person(name,*data):
+    print(name)
+    print(data)
+
+person('suresh',28,'guntur',8790923747)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+suresh
+(28, 'guntur', 8790923747)
+
+Process finished with exit code 0
+================================================
+#but we dont the details belong to which one
+def person(name,**data):
+    print(name)
+    print(data)
+
+person('suresh',age=28,proper='guntur',number=8790923747)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+suresh
+{'age': 28, 'proper': 'guntur', 'number': 8790923747}
+
+Process finished with exit code 0
+=========================================================================
+#but we dont the details belong to which one
+def person(name,**data):
+    print(name)
+    for i,j in data.items():
+        print(i,j)
+person('suresh',age=28,proper='guntur',number=8790923747)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+suresh
+age 28
+proper guntur
+number 8790923747
+
+Process finished with exit code 0
 
 
 
