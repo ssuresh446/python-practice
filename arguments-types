@@ -1,0 +1,15 @@
+#types of arguments or parameters in functions
+#position type; keyword type ; default type and variable length arguments
+#positin type: it detects according to position
+def person(name,age):
+    print(name)
+    print(age)
+person('suresh',28)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+suresh
+28
+
+Process finished with exit code 0
+================================================================================
