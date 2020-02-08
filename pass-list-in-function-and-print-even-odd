@@ -1,0 +1,44 @@
+#lst=[20,25,14,19,16,24,28,47,26]==if we didnt write code for user input, then we can take an array directly
+from array import *
+lst=[]
+x=int(input('enter the size of the array : '))
+for i in range(x):
+    y=int(input('enter the next value in the array : '))
+    lst.append(y)
+
+print(lst)
+
+def count(lst):
+    even=0
+    odd=0
+    for i in lst:
+        if i%2==0:
+            print(i,'is even')
+            even+=1
+        else:
+            print(i,'is odd')
+            odd+=1
+    return even,odd
+
+even,odd=count(lst)
+print("even : {} and odd : {}".format(even,odd))
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter the size of the array : 6
+enter the next value in the array : 245
+enter the next value in the array : 58
+enter the next value in the array : 34
+enter the next value in the array : 579
+enter the next value in the array : 245
+enter the next value in the array : 578
+[245, 58, 34, 579, 245, 578]
+245 is odd
+58 is even
+34 is even
+579 is odd
+245 is odd
+578 is even
+even : 3 and odd : 3
+
+Process finished with exit code 0
