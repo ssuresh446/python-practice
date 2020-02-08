@@ -1,0 +1,51 @@
+a=10
+def something():
+    a=15
+    print('in fun',a)
+something()
+print('outside',a)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+in fun 15
+outside 10
+
+Process finished with exit code 0
+
+
+here even we mention global variable a=10, its taking local variable in fun as 15. 
+that means in local variable first preference is given in function.
+
+but if local variable is not mentioned , it takes global variable . as following
+========================================================
+a=10
+def something():
+    
+    print('in fun',a)
+something()
+print('outside',a)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+in fun 10
+outside 10
+
+Process finished with exit code 0
+=======================================
+but if we take varible as global variable in the function itself, 
+it will be considered as global variable outside also as following.
+=======================================================================
+a=10
+def something():
+    global a
+    a=15
+    print('in fun',a)
+something()
+print('outside',a)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+in fun 15
+outside 15
+
+Process finished with exit code 0
+================================================
+if we want to use global variables and local variables in the same function, we can do as following by using globals().
+===============================================================
