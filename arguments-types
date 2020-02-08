@@ -58,6 +58,65 @@ kumar
 
 Process finished with exit code 0
 =================================================================
+#varible length : here , if we dont know the length
+def sum(a,b):
+    c=a+b
+    print(c)
+sum(2,7)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+9
+
+Process finished with exit code 0
+=============================================
+#varible length : here , if we dont know the length
+def sum(a,b):
+    c=a+b
+    print(c)
+sum(2,7,8,17)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 5, in <module>
+    sum(2,7,8,17)
+TypeError: sum() takes 2 positional arguments but 4 were given
+
+Process finished with exit code 1
+==================================================================
+#varible length : here , if we dont know the length
+def sum(a,*b):
+    print(a)
+    print(b)
+    c=a
+    for i in range(len(b)):
+        d = c + b[i]
+        c=d
+    print(c)
+sum(2,7,8,17,66)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+2
+(7, 8, 17, 66)
+100
+
+Process finished with exit code 0
+====================================================================
+#varible length : here , if we dont know the length
+def sum(*b):
+    print(b)
+    c=0
+    for i in range(len(b)):
+        d = c + b[i]
+        c=d
+    print(c)
+sum(2,7,8,17,66)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+(2, 7, 8, 17, 66)
+100
+
+Process finished with exit code 0
+==================================================================
 
 
 
