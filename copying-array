@@ -1,0 +1,53 @@
+#there are different ways of copying array, following are 3 ways
+1) b=a: we get same address for both arrays
+
+
+if we want to have different addresses
+2)shallow copy and 3) deep copy
+
+
+Shallow Copy : here even we do modifications in the second array, there will be changes in first array also.
+
+from numpy import *
+a=array([1,2,3,4,5])
+print('a is :',a)
+print(id(a))
+b=a.view()
+b[0]=10
+print('b is :',b)
+print(id(b))
+print('a is :',a)
+print(id(a))
+Output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+a is : [1 2 3 4 5]
+140634359328480
+b is : [10  2  3  4  5]
+140634328325056
+a is : [10  2  3  4  5]
+140634359328480
+
+Process finished with exit code 0
+
+Deep Copy : here even we do modifications in the second array, there will be no changes in first array
+from numpy import *
+a=array([1,2,3,4,5])
+print('a is :',a)
+print(id(a))
+b=a.copy()
+b[0]=10
+print('b is :',b)
+print(id(b))
+print('a is :',a)
+print(id(a))
+
+Output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+a is : [1 2 3 4 5]
+140568321834720
+b is : [10  2  3  4  5]
+140568290831296
+a is : [1 2 3 4 5]
+140568321834720
+
+Process finished with exit code 0
