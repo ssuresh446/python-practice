@@ -1,0 +1,12 @@
+def fact(n):
+    if n==0:
+        return 1
+    return n*fact(n-1)
+result=fact(7)
+print(result)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+5040
+
+Process finished with exit code 0
