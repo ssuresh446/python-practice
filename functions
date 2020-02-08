@@ -48,3 +48,47 @@ enter what do you want : name
 suresh
 
 enter what do you want : 
+===========================================
+def greet():
+    print('Hello')
+    print("Good Morning")
+greet()
+
+def add(x, y, z):
+    result = x + y + z
+    print(result)
+add(2, 4, 6)
+
+def add(x, y, z):
+    result = x + y + z
+    return result
+add(2, 4, 6)
+
+def add(x, y, z):
+    result = x + y + z
+    return result #result has value but need to display specifically
+result=add(2, 4, 9)
+print(result)#if we print only, it will be displayed
+
+def add_sub(x, y):
+    result1 = x + y
+    result2=x-y
+    print(result, result2)
+add(2, 4, 6)
+
+def add_sub(x, y):
+    result1 = x + y
+    result2=x-y
+    return result, result2
+result1,result2=add_sub(2, 4)
+print(result1,result2)
+ 
+ Output:
+ /home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Hello
+Good Morning
+12
+15
+15 -2
+
+Process finished with exit code 0
