@@ -1,0 +1,50 @@
+def suresh():
+    print()
+    x=input('enter what do you want : ')
+    if x=='name':
+        print('suresh')
+    elif x=='number':
+        print('8790923747')
+    elif x=='dob':
+        print('09051990')
+    elif x=='village':
+        print('Harischandrapuram')
+    elif x=='father':
+        print('amaraiah')
+    elif x=='mother':
+        print('nagapadma')
+    elif x=='bro1':
+        print('scsr')
+    elif x=='bro2':
+        print('sai')
+    suresh()
+suresh()
+
+Output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+
+enter what do you want : bro2
+sai
+
+enter what do you want : bro1
+scsr
+
+enter what do you want : mother
+nagapadma
+
+enter what do you want : father
+amaraiah
+
+enter what do you want : dob
+09051990
+
+enter what do you want : village
+Harischandrapuram
+
+enter what do you want : number
+8790923747
+
+enter what do you want : name
+suresh
+
+enter what do you want : 
