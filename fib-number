@@ -1,0 +1,44 @@
+n=int(input('enter the value upto which you want to find fib : '))
+def fib(n):
+    a=0
+    b=1
+    if n<=1 :
+        print(a)
+    elif n>1:
+        print(a)
+        print(b)
+        for i in range(2,n):
+            c=a+b
+            #print(c)
+            a=b
+            b=c
+            print(c)
+    elif n<0:
+        print('you have given invalid number')
+
+fib(n)
+
+output 1:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter the value upto which you want to find fib : 12
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+
+Process finished with exit code 0
+
+output 2 :
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter the value upto which you want to find fib : -7
+you have given invalid number
+
+Process finished with exit code 0
