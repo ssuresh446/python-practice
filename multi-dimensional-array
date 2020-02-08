@@ -23,3 +23,19 @@ print(a.size)
 
 
 by using matrix:
+from numpy import *
+a=matrix('1,3,5;2,4,6;7,8,9')
+print(a)
+print(a.diagonal())
+print(a.min())
+print(a.max())
+print(a.dtype)
+print(a.flatten())
+print(a.reshape(1,3,3))
+print(a.reshape(3,1,3))
+print(a.reshape(3,3,1))
+print(len(a))
+print(a.mean())
+print(a.size)
+
+
