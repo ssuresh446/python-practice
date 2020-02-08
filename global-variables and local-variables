@@ -49,3 +49,35 @@ Process finished with exit code 0
 ================================================
 if we want to use global variables and local variables in the same function, we can do as following by using globals().
 ===============================================================
+a=10
+print(a)
+print(id(a))
+def something():
+    #global a
+    a=11
+    print('in function',a)
+    print(id(a))
+    x=globals()['a'] #if we mention global, then it indicates global variable even it is inside the function.
+    print(x)
+    print(id(x))
+    globals()['a']=15 #we can change the global variable inside function also by using this .
+    print(a) #if we use simply 'a' then it represents local variable of the function.
+    print(id(a))
+
+something()
+print('outside',a)
+print(id(a))
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+10
+10914784
+in function 11
+10914816
+10
+10914784
+11
+10914816
+outside 15
+10914944
+
+Process finished with exit code 0
