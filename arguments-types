@@ -13,3 +13,51 @@ suresh
 
 Process finished with exit code 0
 ================================================================================
+#keyword type: even it does not has order , i t can detect according to keyword
+def person(name,age):
+    print(name)
+    print(age)
+person(age, name)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 5, in <module>
+    person(age, name)
+NameError: name 'age' is not defined
+
+Process finished with exit code 1
+================================================================
+
+
+#keyword type: even it does not has order , i t can detect according to keyword
+def person(name,age):
+    print(name)
+    print(age)
+person(age = 28 , name='suresh')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+suresh
+28
+
+Process finished with exit code 0
+==================================================================
+
+#default type: if any one of the actual detail is not given , by default it takes what we mentioned in the formal details
+
+def person(name='suresh',age=18):
+    print(name)
+    print(age)
+person('kumar')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+kumar
+18
+
+Process finished with exit code 0
+=================================================================
+
+
+
