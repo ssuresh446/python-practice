@@ -1,0 +1,23 @@
+def is_even(n):
+    return n%2==0
+
+nums=[1,3,5,7,9,2,4,6,8,0]
+
+evens=list(filter(is_even,nums))
+print(evens)
+
+# or
+print('here no need to define function seperately')
+nums1=[1,3,5,7,12,20,19]
+
+evens=list(filter(lambda k:k%2==0,nums1))
+print(evens)
+
+output:
+
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+[2, 4, 6, 8, 0]
+here no need to define function seperately
+[12, 20]
+
+Process finished with exit code 0
