@@ -1,0 +1,47 @@
+generally if we want to use functions , we can use in the same file only
+ofcourse we can use in-built functions any where.
+if we want to use functions created by us in one function , can use in other function.
+this can be done by using module concept, just we need to import the old file in the new file.
+
+
+calc.py file :
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mult(a,b):
+    return a*b
+def div(a,b):
+    return a/b
+==========================================    
+1.py file :
+import calc
+a=9
+b=7
+c=calc.add(a,b)
+print(c)
+c=calc.sub(a,b)
+print(c)
+
+or
+
+from calc import *
+a=9
+b=7
+c=add(a,b)
+print(c)
+c=sub(a,b)
+print(c)
+
+output:
+
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+16
+2
+
+Process finished with exit code 0
+========================================
+
+============================================
+
+    
