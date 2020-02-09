@@ -1,0 +1,35 @@
+from functools import reduce
+def update(n):
+    return n*2
+nums1=[1,3,5,7,12,20,19]
+
+evens=list(filter(lambda k:k%2==0,nums1))
+
+doubles=list(map(update,evens))
+
+print(evens)
+print(doubles)
+
+
+
+
+
+nums1=[1,3,50,7,12,10,190]
+
+evens=list(filter(lambda k:k%2==0,nums1))
+
+doubles=list(map(lambda l:l*2,evens))
+
+print(evens)
+print(doubles)
+
+output:
+
+
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+[12, 20]
+[24, 40]
+[50, 12, 10, 190]
+[100, 24, 20, 380]
+
+Process finished with exit code 0
