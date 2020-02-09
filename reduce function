@@ -1,0 +1,36 @@
+from functools import reduce
+def add_all(a,b):
+    return a+b
+nums=[1,3,5,7,12,20,19]
+
+evens=list(filter(lambda k:k%2==0,nums))
+
+sum=reduce(add_all,evens)
+
+print(evens)
+print(sum)
+
+
+
+nums1=[1,3,523,5,78,23,890]
+
+evens=list(filter(lambda k:k%2==0,nums1))
+
+sum1=reduce(lambda a,b:a+b,evens)
+
+sum2=reduce(lambda a,b:a+b,nums1)
+
+print(evens)
+print(sum1)
+print(sum2)
+
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+[12, 20]
+32
+[78, 890]
+968
+1523
+
+Process finished with exit code 0
