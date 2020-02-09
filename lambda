@@ -1,0 +1,35 @@
+print('no need to use function name \nmultiple times. it has only one expression rather than multiple steps and \ninstead of defining a function seperately , we can define the function when we want \nto use it directly.')
+def square(a):
+    return a*a
+result=square(5)
+print(result)
+
+
+f=lambda a:a*a
+result=f(15)
+print(result)
+
+g=lambda b,c,d:b+c-d
+result=g(15,28,3)
+print(result)
+
+i=lambda a,b,c,d:a*b+c-d
+x=i(12,4,10,40)
+print(x)
+
+
+  
+  
+output:
+
+  /home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+no need to use function name 
+multiple times. it has only one expression rather than multiple steps and 
+instead of defining a function seperately , we can define the function when we want 
+to use it directly.
+25
+225
+40
+18
+
+Process finished with exit code 0
