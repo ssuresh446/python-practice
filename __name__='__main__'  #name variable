@@ -1,0 +1,76 @@
+calc.py file:
+
+print('Hello')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/2.py
+Hello
+
+Process finished with exit code 0
+
+and
+
+print(__name__)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/2.py
+__main__
+
+Process finished with exit code 0
+
+
+
+and
+
+print('Hello',__name__)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/2.py
+Hello __main__
+
+Process finished with exit code 0
+
+and
+
+calc.py file latest :
+
+print('i am calc : who are you :',__name__)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/calc.py
+i am calc : who are you : __main__
+
+Process finished with exit code 0
+ 
+
+and
+
+1.py file :
+
+print('hello',__name__)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+hello __main__
+
+Process finished with exit code 0
+
+and
+ 
+ but if we import calc file here , the following is output
+ 
+ import calc
+print('hello',__name__)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+i am calc : who are you : calc
+hello __main__
+
+Process finished with exit code 0
+============
+earlier the __name__ in calc shown as __main__, but here 
+if we import this calc file in another file, then in the output 
+of other file its showing __name__ as calc(which is name of the module). observe carefully.
+but we dont want to display the unwanted data in the present file output for using
+that module for some other purpose. for this follow the below file
+=========================================================================
