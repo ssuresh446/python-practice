@@ -72,5 +72,26 @@ earlier the __name__ in calc shown as __main__, but here
 if we import this calc file in another file, then in the output 
 of other file its showing __name__ as calc(which is name of the module). observe carefully.
 but we dont want to display the unwanted data in the present file output for using
-that module for some other purpose. for this follow the below file
+that module for some other purpose. for this follow the below file.
 =========================================================================
+this is all because, the first step in the execution of python file is __name__ variable.
+we need to set in such away that , when the file starts execution, if __name__='__main__' only, print the following data.
+=======================================================================================
+
+#actually in the if condition , not only the aove step,
+#it may contain any function, when we call that function only, the module which we mentioned in the new file should be executed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+#actually in the if condition , not only the aove step,
+#it may contain any function, when we call that function only, the module which we mentioned in the new file should be executed.
