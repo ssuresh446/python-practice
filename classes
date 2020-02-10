@@ -63,3 +63,54 @@ Process finished with exit code 0
 ==========================================
 if we add variables?attributes also..
 ======================================================
+class computer:
+    def __init__(self):
+        print('this is init function')
+    def config(self):
+        print("config is ")
+com1=computer()
+com2=computer()
+print(type(com1))
+print(type(com2))
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+this is init function
+this is init function
+<class '__main__.computer'>
+<class '__main__.computer'>
+
+Process finished with exit code 0
+====================================================
+#actually we are not calling init function anywhere in the programm, this is speciality here.#
+
+
+class computer:
+    def __init__(self,cpu,ram):
+        self.cpu=cpu
+        self.ram=ram
+
+    def config(self):
+        print("config is ",self.cpu,self.ram)
+com1=computer('i5','16gb')
+com2=computer('i7','3 20gb')
+print(type(com1))
+print(type(com2))
+
+computer.config(com1)
+computer.config(com2)
+
+
+com1.config()
+com2.config()
+
+OUTPUT:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+<class '__main__.computer'>
+<class '__main__.computer'>
+config is  i5 16gb
+config is  i7 3 20gb
+config is  i5 16gb
+config is  i7 3 20gb
+
+Process finished with exit code 0
