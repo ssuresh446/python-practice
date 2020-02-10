@@ -8,3 +8,50 @@
 #if we have anything in the __init__ function, then it will be executed automatically without calling the function also.
 but the class should not be empty, if we dont have any data to keep in __init__ function... then we can take pass.
 
+class computer:
+    def __init__(self):
+        self.name='suresh'
+        self.age=28
+    def update(self):
+        self.age=30
+
+c1=computer()
+c2=computer()
+
+print(id(c1))
+print(id(c2))
+
+
+print(c1.name)
+print(c1.age)
+print(c2.name)
+print(c2.age)
+c1.name='sai'
+c1.age=26
+c2.name='kumar'
+c2.age=27
+print(c1.name)
+print(c1.age)
+print(c2.name)
+print(c2.age)
+
+c1.update()#here we are not mentioning c1 (object name) in the brackets
+# but self in the brackets in the function update(self) indicates the object which is in the starting.
+#this is the concept of self
+print(c1.age)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+140597497610424
+140597497610648
+suresh
+28
+suresh
+28
+sai
+26
+kumar
+27
+30
+
+Process finished with exit code 0
