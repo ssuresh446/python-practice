@@ -1,0 +1,68 @@
+class a:  # single level inheritance
+    def feature1(self):
+        print('feature1 working')
+    def feature2(self):
+        print('feature2 working')
+a1=a()
+a1.feature1()
+a1.feature2()
+class b:
+    def feature3(self):
+        print('feature3 working')
+    def feature4(self):
+        print('feature4 working')
+b1=b()
+b1.feature3()
+b1.feature4()
+class b(a):  # multi-level inheritance
+    def feature5(self):
+        print('feature5 working')
+    def feature6(self):
+        print('feature6 working')
+b1=b()
+b1.feature1()
+b1.feature2()
+b1.feature5()
+b1.feature6()
+class c:
+    def feature7(self):
+        print('feature7 working')
+    def feature8(self):
+        print('feature8 working')
+c1=c()
+c1.feature7()
+c1.feature8()
+class d(b,a):   # multiple inheritance
+    def feature9(self):
+        print('feature9 working')
+    def feature10(self):
+        print('feature10 working')
+d1=d()
+d1.feature9()
+d1.feature10()
+d1.feature1()
+d1.feature2()
+d1.feature5()
+d1.feature6()
+
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+feature1 working
+feature2 working
+feature3 working
+feature4 working
+feature1 working
+feature2 working
+feature5 working
+feature6 working
+feature7 working
+feature8 working
+feature9 working
+feature10 working
+feature1 working
+feature2 working
+feature5 working
+feature6 working
+
+Process finished with exit code 0
