@@ -1,0 +1,42 @@
+Instance Variable
+Class variable or Static variable
+
+class car:
+    wheels=4
+    def __init__(self):
+        self.milage=10
+        self.company='BMW'
+car1=car()
+car2=car()
+print(car1.company,car1.milage)
+print(car2.company,car2.milage)
+print(car1.wheels)
+print(car2.wheels)
+car1.company='mahindra'
+car2.milage=20
+car.wheels=6
+print(car1.company,car1.milage)
+print(car2.company,car2.milage)
+print(car1.wheels)
+print(car2.wheels)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+BMW 10
+BMW 10
+4
+4
+mahindra 10
+BMW 20
+6
+6
+
+Process finished with exit code 0
+====================================================================
+in the above case, wheels are same for every object(car1,car2) so it is called Class variable or Static variables.
+we can mention static variables out of init function and inside class.
+
+where as .. comany name, milage, car number etc. are different for every car . so the details changes according to object.
+so it is called instance varibles.
+
+but we can change both variables at anytime if we want to change.
