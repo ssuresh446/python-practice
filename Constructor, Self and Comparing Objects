@@ -1,0 +1,10 @@
+#inside computer we have heap memory, inside this heap memory we have objects.
+#objects take some space in the heap memory and every space has certain address.
+#every time when we create an object it takes new space.
+#the size of the object depends upon number of variables/attributes and size of the variable.
+
+#but to assign the address, space , size the constructor is responsible.
+
+#if we have anything in the __init__ function, then it will be executed automatically without calling the function also.
+but the class should not be empty, if we dont have any data to keep in __init__ function... then we can take pass.
+
