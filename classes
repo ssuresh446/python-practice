@@ -36,3 +36,30 @@ there are 15 dotnet developers are working in company
 there are 20 python developers are working in company
 
 Process finished with exit code 0
+==========================================================
+class computer:
+    def config(self):
+        print("i5, 16gb, 1TB")
+com1=computer()
+com2=computer()
+print(type(com1))
+print(type(com2))
+
+computer.config(com1)
+computer.config(com2)
+com1.config()
+com2.config()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+<class '__main__.computer'>
+<class '__main__.computer'>
+i5, 16gb, 1TB
+i5, 16gb, 1TB
+i5, 16gb, 1TB
+i5, 16gb, 1TB
+
+Process finished with exit code 0
+==========================================
+if we add variables?attributes also..
+======================================================
