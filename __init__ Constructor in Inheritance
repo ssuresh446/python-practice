@@ -216,7 +216,7 @@ class b:
         print('this is feature3 of class b')
     def feature4(self):
         print('this is feature4 of class b')
-class c(b,a):
+class c(b,a):                    #it inherits the class which is left side in bracket
     def __init__(self):
         print('this is init of c')
         super().__init__()
@@ -233,3 +233,34 @@ this is init of b
 
 Process finished with exit code 0
 =========================================================================================
+class a:
+    def __init__(self):
+        print('this is init of a')
+    def feature1(self):
+        print('this is feature1 of class a')
+    def feature2(self):
+        print('this is feature2 of class a')
+
+class b:
+
+    def feature3(self):
+        print('this is feature3 of class b')
+    def feature4(self):
+        print('this is feature4 of class b')
+class c(b,a):            # #it inherits the class which is left side in bracket, if it does not exists then it go for next class
+    def __init__(self):
+        print('this is init of c')
+        super().__init__()
+    def feature5(self):
+        print('this is feature5 of class c')
+    def feature6(self):
+        print('this is feature6 of class c')
+c1=c()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+this is init of c
+this is init of a
+
+Process finished with exit code 0
+==========================================================================================================
