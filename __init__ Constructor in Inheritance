@@ -1,0 +1,235 @@
+class a:
+    def feature1(self):
+        print('this is feature1 of class a')
+    def feature2(self):
+        print('this is feature2 of class a')
+
+class b:
+    def feature3(self):
+        print('this is feature3 of class b')
+    def feature4(self):
+        print('this is feature4 of class b')
+b1=b()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+
+Process finished with exit code 0
+=====================================================================
+class a:
+    def feature1(self):
+        print('this is feature1 of class a')
+    def feature2(self):
+        print('this is feature2 of class a')
+
+class b:
+    def __init__(self):
+        print('this is init of b')
+    def feature3(self):
+        print('this is feature3 of class b')
+    def feature4(self):
+        print('this is feature4 of class b')
+b1=b()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+this is init of b
+
+Process finished with exit code 0
+=======================================================================================================
+class a:
+    def feature1(self):
+        print('this is feature1 of class a')
+    def feature2(self):
+        print('this is feature2 of class a')
+
+class b(a):
+    def __init__(self):
+        print('this is init of b')
+    def feature3(self):
+        print('this is feature3 of class b')
+    def feature4(self):
+        print('this is feature4 of class b')
+b1=b()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+this is init of b
+
+Process finished with exit code 0
+=====================================================================================================
+class a:
+    def __init__(self):
+        print('this is init of a')
+    def feature1(self):
+        print('this is feature1 of class a')
+    def feature2(self):
+        print('this is feature2 of class a')
+
+class b(a):
+    def __init__(self):
+        #super().__init__()
+        print('this is init of b')
+    def feature3(self):
+        print('this is feature3 of class b')
+    def feature4(self):
+        print('this is feature4 of class b')
+b1=b()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+this is init of b
+
+Process finished with exit code 0
+==================================================================================
+class a:
+    def __init__(self):
+        print('this is init of a')
+    def feature1(self):
+        print('this is feature1 of class a')
+    def feature2(self):
+        print('this is feature2 of class a')
+
+class b(a):
+    def __init__(self):
+        super().__init__()
+        print('this is init of b')
+    def feature3(self):
+        print('this is feature3 of class b')
+    def feature4(self):
+        print('this is feature4 of class b')
+b1=b()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+this is init of a
+this is init of b
+
+Process finished with exit code 0
+===================================================================================================
+class a:
+    def __init__(self):
+        print('this is init of a')
+    def feature1(self):
+        print('this is feature1 of class a')
+    def feature2(self):
+        print('this is feature2 of class a')
+
+class b:
+    def __init__(self):
+        print('this is init of b')
+    def feature3(self):
+        print('this is feature3 of class b')
+    def feature4(self):
+        print('this is feature4 of class b')
+class c(a,b):
+    def __init__(self):
+        #super().__init__()
+        print('this is init of c')
+    def feature5(self):
+        print('this is feature5 of class c')
+    def feature6(self):
+        print('this is feature6 of class c')
+c1=c()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+this is init of c
+
+Process finished with exit code 0
+=================================================================================================================
+class a:
+    def __init__(self):
+        print('this is init of a')
+    def feature1(self):
+        print('this is feature1 of class a')
+    def feature2(self):
+        print('this is feature2 of class a')
+
+class b:
+    def __init__(self):
+        print('this is init of b')
+    def feature3(self):
+        print('this is feature3 of class b')
+    def feature4(self):
+        print('this is feature4 of class b')
+class c(a,b):
+    def __init__(self):
+        super().__init__()
+        print('this is init of c')
+    def feature5(self):
+        print('this is feature5 of class c')
+    def feature6(self):
+        print('this is feature6 of class c')
+c1=c()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+this is init of a
+this is init of c
+
+Process finished with exit code 0
+=============================================================================================================
+class a:
+    def __init__(self):
+        print('this is init of a')
+    def feature1(self):
+        print('this is feature1 of class a')
+    def feature2(self):
+        print('this is feature2 of class a')
+
+class b:
+    def __init__(self):
+        print('this is init of b')
+    def feature3(self):
+        print('this is feature3 of class b')
+    def feature4(self):
+        print('this is feature4 of class b')
+class c(b,a):
+    def __init__(self):
+           print('this is init of c')
+    #super().__init__()
+    def feature5(self):
+        print('this is feature5 of class c')
+    def feature6(self):
+        print('this is feature6 of class c')
+c1=c()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+this is init of c
+
+Process finished with exit code 0
+==============================================================================================
+class a:
+    def __init__(self):
+        print('this is init of a')
+    def feature1(self):
+        print('this is feature1 of class a')
+    def feature2(self):
+        print('this is feature2 of class a')
+
+class b:
+    def __init__(self):
+        print('this is init of b')
+    def feature3(self):
+        print('this is feature3 of class b')
+    def feature4(self):
+        print('this is feature4 of class b')
+class c(b,a):
+    def __init__(self):
+        print('this is init of c')
+        super().__init__()
+    def feature5(self):
+        print('this is feature5 of class c')
+    def feature6(self):
+        print('this is feature6 of class c')
+c1=c()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+this is init of c
+this is init of b
+
+Process finished with exit code 0
+=========================================================================================
