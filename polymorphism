@@ -1,1 +1,33 @@
-polymorphism: one thing with different forms
+polymorphism: one thing with different forms.
+duck type:
+class pycharm:
+    def exec(self):
+        print('compiling')
+        print('running')
+class myeditor:
+    def exec(self):
+        print('spell check')
+        print('convention check')
+        print('compiling')
+        print('running')
+class laptop:
+    def code(self,ide):
+        ide.exec()
+
+ide=myeditor()
+lap1=laptop()
+lap1.code(ide)
+ide=pycharm()
+lap1.code(ide)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+spell check
+convention check
+compiling
+running
+compiling
+running
+
+Process finished with exit code 0
+================================================================================================================
