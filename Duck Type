@@ -1,0 +1,47 @@
+#Duck Typing
+#https://www.youtube.com/watch?v=CuK0g8OFzwo&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=62
+#Duck Typing
+#https://www.youtube.com/watch?v=CuK0g8OFzwo&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=62
+x=5 # here we named the value 5 as 'x'
+print(x)
+print(type(x))
+x='suresh' #here we named the 'suresh' string as 'x'
+print('we got a space which is of type int, but we dont have specific type for x')
+print(x)
+print(type(x))
+print('we got a space which is of type string, but we dont have specific type for x')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+5
+<class 'int'>
+we got a space which is of type int, but we dont have specific type for x
+suresh
+<class 'str'>
+we got a space which is of type string, but we dont have specific type for x
+
+Process finished with exit code 0
+
+====================================
+#to understand this concept, lets take an example
+class pycharm:
+    def execute(self):
+        print('compiling')
+        print('running')
+class pycharm:
+    def execute(self):
+        print('compiling')
+        print('running')
+class laptop:
+    def code(self,ide):
+        ide.execute()
+ide=pycharm()
+lap1=laptop()
+lap1.code(ide)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+compiling
+running
+
+Process finished with exit code 0
+============================================
