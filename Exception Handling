@@ -34,6 +34,7 @@ ZeroDivisionError is the error, due to the value given by user is 0
 a=5 #there will be no error due to these 2 steps.
 b=p
 print(a/b) #error due to this step.
+print('Bye')
 
 output:
 /home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
@@ -45,5 +46,151 @@ NameError: name 'p' is not defined
 Process finished with exit code 1
 
 ==================================================================================
-NameError is the error due the value given by user is 'p'
+NameError is the error due the value given by user is 'p'and we are not getting Bye at the end that means execution is stopped at the error.
 ====================================================================================================
+a=5 #there will be no error due to these 2 steps.
+b=0
+try:
+    print(a / b)
+except Exception:
+    print('Hey, you can not divided by "0"')
+print('Bye')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Hey, you can not divided by "0"
+Bye
+
+Process finished with exit code 0
+==================================================================================
+a=5 #there will be no error due to these 2 steps.
+b=0
+try:
+    print(a / b)
+except Exception as e:
+    print('Hey, you can not divided by "0"',e)
+print('Bye')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Hey, you can not divided by "0" division by zero
+Bye
+
+Process finished with exit code 0
+===========================================================================================
+a=5 #there will be no error due to these 2 steps.
+b=3
+try:
+    print('resource open')
+    print(a / b)
+    print('resource closed')
+except Exception as e:
+    print('Hey, you can not divided by "0"',e)
+print('Bye')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+resource open
+1.6666666666666667
+resource closed
+Bye
+
+Process finished with exit code 0
+===========================================================================
+a=5 #there will be no error due to these 2 steps.
+b=0
+try:
+    print('resource open')
+    print(a / b)
+    print('resource closed')
+except Exception as e:
+    print('Hey, you can not divided by "0"',e)
+print('Bye')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+resource open
+Hey, you can not divided by "0" division by zero
+Bye
+
+Process finished with exit code 0
+=================================================================================
+if there is no error , above program is correct but above program is gone through exception, we may get wrong indication as following.
+========================================================================================
+a=5 #there will be no error due to these 2 steps.
+b=0
+try:
+    print('resource open')
+    print(a / b)
+except Exception as e:
+    print('Hey, you can not divided by "0"',e)
+    print('resource closed')
+print('Bye')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+resource open
+Hey, you can not divided by "0" division by zero
+resource closed
+Bye
+
+Process finished with exit code 0
+=========================================================================================
+a=5 #there will be no error due to these 2 steps.
+b=2
+try:
+    print('resource open')
+    print(a / b)
+except Exception as e:
+    print('Hey, you can not divided by "0"',e)
+    print('resource closed')
+print('Bye')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+resource open
+2.5
+Bye
+
+Process finished with exit code 0
+==================================================================================
+again in the above program, we are not getting resource closed., so follow the below.
+=========================================================================================
+a=5 #there will be no error due to these 2 steps.
+b=2
+try:
+    print('resource open')
+    print(a / b)
+except Exception as e:
+    print('Hey, you can not divided by "0"',e)
+finally:
+    print('resource closed')
+print('Bye')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+resource open
+2.5
+resource closed
+Bye
+
+Process finished with exit code 0
+==================================================================================================
+a=5 #there will be no error due to these 2 steps.
+b=0
+try:
+    print('resource open')
+    print(a / b)
+except Exception as e:
+    print('Hey, you can not divided by "0"',e)
+finally:
+    print('resource closed')
+print('Bye')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+resource open
+Hey, you can not divided by "0" division by zero
+resource closed
+Bye
+
+Process finished with exit code 0
+=======================================================================================================
+finally will be executed always even we get error or even we dont get error also.
+=============================================================================================================
