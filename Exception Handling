@@ -1,0 +1,7 @@
+#there are 3 types of errors
+#1)compile time error : syntax and spelling mistake
+#2)logical error : compiled successfully but gives wrong output(3-1=5).
+#3)runtime error : code gets compiled and not giving either compile time error or logical error also.
+#but the user might give wrong input while compilation(4/0).
+#compile time error is most easiest error for developer.
+#runtime error is difficult but it is due to input given by user but not out mistake.
