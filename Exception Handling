@@ -194,3 +194,86 @@ Process finished with exit code 0
 =======================================================================================================
 finally will be executed always even we get error or even we dont get error also.
 =============================================================================================================
+a=5 #there will be no error due to these 2 steps.
+#if we take input from user
+b=int(input('enter the value of "b" : '))
+try:
+    print('resource open')
+    print(a / b)
+except Exception as e:
+    print('Hey, you can not divided by "0"',e)
+finally:
+    print('resource closed')
+print('Bye')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter the value of "b" : 4
+resource open
+1.25
+resource closed
+Bye
+
+Process finished with exit code 0
+==========================================================================================================
+if we give the int, there will not be any problem.. if we give any string value., see the error below
+===========================================================================================================
+a=5 #there will be no error due to these 2 steps.
+#if we take input from user
+b=int(input('enter the value of "b" : '))
+try:
+    print('resource open')
+    print(a / b)
+except Exception as e:
+    print('Hey, you can not divided by "0"',e)
+finally:
+    print('resource closed')
+print('Bye')
+ output:
+ /home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+enter the value of "b" : f
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 3, in <module>
+    b=int(input('enter the value of "b" : '))
+ValueError: invalid literal for int() with base 10: 'f'
+
+Process finished with exit code 1
+===========================================================================================================
+it's showing as value error.here exception also cant do anything.
+===========================================================================================================
+a=5 #there will be no error due to these 2 steps.
+#if we take input from user
+try:
+    print('resource open')
+    b = int(input('enter the value of "b" : '))
+    print(a / b)
+except ZeroDivisionError as e:
+    print('Hey, you can not divided by "0"', e)
+except ValueError as e:#we can use anything in place of e, there is no meaning for it.
+    print('invalid input')
+
+except Exception as e:
+    print('Hey, you are wrong',e)
+finally:
+    print('resource closed')
+print('Bye')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+resource open
+enter the value of "b" : 2.5
+invalid input
+resource closed
+Bye
+
+Process finished with exit code 0
+
+output2:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+resource open
+enter the value of "b" : w
+invalid input
+resource closed
+Bye
+
+Process finished with exit code 0
+output3:
