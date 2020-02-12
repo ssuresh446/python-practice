@@ -43,3 +43,76 @@ IndexError: list index out of range
 
 Process finished with exit code 1
 ===========================================================================================
+there are 2 ways to display the values in the list, two functions are iter and next as following.
+===========================================================================================
+nums=[1,4,45,9]
+x=iter(nums)
+print(x.__next__())
+print(x.__next__())
+print(x.__next__())
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+1
+4
+45
+
+Process finished with exit code 0
+===================================================================================================
+nums=[1,4,45,9]
+x=iter(nums)
+print(x.__next__()) # it gives first value
+print(x.__next__())# it knows last value of i, given and gives next value 
+print(x.__next__())
+print(x.__next__())
+print(x.__next__())
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+1
+4
+45
+9
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 7, in <module>
+    print(x.__next__())
+StopIteration
+
+Process finished with exit code 1
+========================================================================================================
+and
+=========================================================================================================
+nums=[1,4,45,9]
+x=iter(nums)
+print(next(x))
+print(next(x))
+print(next(x))
+print(next(x))
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+1
+4
+45
+9
+
+Process finished with exit code 0
+===============================================================================================================
+nums=[1,4,45,9]
+x=iter(nums)
+print(next(x)) # it displays first value.
+print(x.__next__()) # it knows the last value displayed , then it displays next value
+for i in nums:
+    print(i)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+1
+4
+1
+4
+45
+9
+
+Process finished with exit code 0
+===================================================================================================
+we can create our own object, class as following.
+====================================================================================================
