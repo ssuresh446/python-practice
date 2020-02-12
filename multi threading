@@ -2237,6 +2237,8 @@ hello 9
 
 Process finished with exit code 0
 ===============================================
+#to avoid this collision also , we need to create some delay between starting of these two threads(0.5sec)
+===========================================================================================================
 from time import sleep
 from threading import *
 class hello(Thread):
