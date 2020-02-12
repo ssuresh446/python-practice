@@ -1,0 +1,95 @@
+#if we want to create iterators to fetch list of values, but we need to define two functions next and iter
+#generators give us iterators
+def topten():
+    return 5
+
+values=topten()
+print(values)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+5
+
+Process finished with exit code 0
+=============================================================================================================
+def topten():
+    yield 5
+
+values=topten()
+print(values)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+<generator object topten at 0x7f2671520468>
+
+Process finished with exit code 0
+=============================================================================================================
+def topten():
+    yield 5
+
+values=topten()
+print(values.__next__())
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+5
+
+Process finished with exit code 0
+==============================================================================================================
+def topten():
+    yield 1
+    yield 2
+    yield 3
+    yield 4
+    yield 5
+
+values=topten()
+print(values.__next__())
+print(values.__next__())
+output:
+================================
+def topten():
+    yield 1
+    yield 2
+    yield 3
+    yield 4
+    yield 5
+
+values=topten()
+print(values.__next__())
+print(values.__next__())
+for i in values:
+    print(i)
+   output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+1
+2
+3
+4
+5
+
+Process finished with exit code 0
+==================================================================================================================
+def toptensq():
+    n=1
+    while n<=10:
+        sq=n*n
+        yield sq #same as return but return terminates the execution but yield does not terminates.
+        n+=1
+values=toptensq()
+print(values.__next__())
+print(values.__next__())
+for i in values:
+    print(i)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+1
+4
+9
+16
+25
+36
+49
+64
+81
+100
+
+Process finished with exit code 0
+=========================================================================================================================
