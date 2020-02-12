@@ -2282,3 +2282,81 @@ hello 9
 hi 9
 
 Process finished with exit code 0
+================================================
+from time import sleep
+from threading import *
+class hello(Thread):
+    def run(self):
+        for i in range(5):
+            print('hello',i)
+            sleep(1)
+class hi(Thread):
+    def run(self):
+        for j in range(5):
+            print('hi',j)
+            sleep(1)
+
+t1=hello()
+t2=hi()
+t1.start()
+sleep(0.5)
+t2.start()
+
+print("Bye")
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+hello 0
+hi 0
+Bye
+hello 1
+hi 1
+hello 2
+hi 2
+hello 3
+hi 3
+hello 4
+hi 4
+
+Process finished with exit code 0
+===========================================
+here we are getting Bye early, before competion. so observe the following program., use join.
+======================================================================================
+from time import sleep
+from threading import *
+class hello(Thread):
+    def run(self):
+        for i in range(5):
+            print('hello',i)
+            sleep(1)
+class hi(Thread):
+    def run(self):
+        for j in range(5):
+            print('hi',j)
+            sleep(1)
+
+t1=hello()
+t2=hi()
+t1.start()
+sleep(0.5)
+t2.start()
+t1.join()
+t2.join()
+print("Bye")
+
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+hello 0
+hi 0
+hello 1
+hi 1
+hello 2
+hi 2
+hello 3
+hi 3
+hello 4
+hi 4
+Bye
+
+Process finished with exit code 0
