@@ -1,0 +1,71 @@
+class student:
+    def __init__(self,m1,m2):
+        self.m1=m1
+        self.m2=m2
+    def sum(self,a,b): #only 2 orguments
+        s=a+b
+        return s
+s=student(23,64)
+print(s.sum(3,7))
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+10
+
+Process finished with exit code 0
+====================================================
+class student:
+    def __init__(self,m1,m2):
+        self.m1=m1
+        self.m2=m2
+    def sum(self,a,b,c):
+        s=a+b+c
+        return s
+s=student(23,64)
+print(s.sum(3,7,10))
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+20
+
+Process finished with exit code 0
+
+====================================
+if we dont pass the number of required arguments, if we pass less number of arguments..we set default values are none, as following
+===================================================================================================================
+class student:
+    def __init__(self,m1,m2):
+        self.m1=m1
+        self.m2=m2
+    def sum(self,a,b,c):
+        s=a+b+c
+        return s
+s=student(23,64)
+print(s.sum())
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 9, in <module>
+    print(s.sum())
+TypeError: sum() missing 3 required positional arguments: 'a', 'b', and 'c'
+
+Process finished with exit code 1
+=============================================
+class student:
+    def __init__(self,m1,m2):
+        self.m1=m1
+        self.m2=m2
+    def sum(self,a=None,b=None,c=None):
+        if a!=None and b!=None and c!=None:
+            s=a+b+c
+        elif a!=None and b!=None:
+            s=a+b
+        else:
+            s=a
+        return s
+s=student(23,64)
+print(s.sum(19,18))
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+37
+
+Process finished with exit code 0
+=============================================
