@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=CcTzTuIsoFk&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=64
+
 class student:
     def __init__(self,m1,m2):
         self.m1=m1
@@ -69,3 +71,59 @@ output:
 
 Process finished with exit code 0
 =============================================
+class a:
+    def show(self):
+        print('in "a" show')
+a1=a()
+a1.show()
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+in "a" show
+
+Process finished with exit code 0
+===============================================
+class a:
+    def show(self):
+        print('in "a" show')
+class b:
+    pass
+a1=b()
+a1.show()
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 7, in <module>
+    a1.show()
+AttributeError: 'b' object has no attribute 'show'
+
+Process finished with exit code 1
+
+====================================
+class a:
+    def show(self):
+        print('in "a" show')
+class b(a):
+    pass
+a1=b()
+a1.show()
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+in "a" show
+
+Process finished with exit code 0
+==================================================
+class a:
+    def show(self):
+        print('in "a" show')
+class b(a):
+    def show(self):
+        print('in "b" show')
+a1=b()
+a1.show()
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+in "b" show
+
+Process finished with exit code 0
+===================================================
+if there is no show() in b it displays show of 'a', after .. if 'b' has show, then it displays show() 'b'.. observe the above 2 programs and outputs
