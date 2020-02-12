@@ -78,3 +78,31 @@ clas
 
 Process finished with exit code 0
 ============================================================
+x=open('suresh','w')#we can write by opening that file if the file exists, if the file does not exists, creates the file and writes whatever we mention.
+x.write('this is the first file created by me')
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+
+Process finished with exit code 0
+
+output of suresh:
+this is the first file created by me
+=================================================
+x=open('suresh','w')#we can write by opening that file if the file exists, if the file does not exists, creates the file and writes whatever we mention.
+x.write('added')
+
+output of suresh:
+added
+
+# here we lost the previous data , so we should use append 'a'
+======================================================================
+x=open('suresh','w')#we can write by opening that file if the file exists, if the file does not exists, creates the file and writes whatever we mention.
+x.write('this is the first file created by me')
+
+
+output of suresh:
+this is the first file created by me
+======================================
+this is the first file created by meadded     # if we use 'a' in place of 'w'.
+=============================================================================
