@@ -116,3 +116,93 @@ Process finished with exit code 0
 ===================================================================================================
 we can create our own object, class as following.
 ====================================================================================================
+
+class topten:
+    def __init__(self):
+        self.num=1
+    #if we want to get our own iterator, we need 2 important methods(functions).
+    def __iter__(self):
+        return self
+    def __next__(self):
+        val=self.num
+        self.num+=1
+        return val
+values=topten()
+for i in values:
+    print(i)
+    output:
+    for this program we get infinite numbers continuously, because we didnt mentioned last number.
+   =====================================================================================================
+   but we need to get manually each nuber , this is not correct, we should get through for loop as well.
+   =====================================================================================================
+   class topten:
+    def __init__(self):
+        self.num=1
+    #if we want to get our own iterator, we need 2 important methods(functions).
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.num<=10:
+
+            val=self.num
+            self.num+=1
+            return val
+        else:
+            raise StopIteration # this is raising exception.
+values=topten()
+for i in values:
+    print(i)
+   output:
+   /home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Process finished with exit code 0
+================================================================================
+if we dont mention else : raise ... we get infinite None...to avoid this, we should give raise StopIteration.
+=================================================================================
+class topten:
+    def __init__(self):
+        self.num=1
+    #if we want to get our own iterator, we need 2 important methods(functions).
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.num<=10:
+
+            val=self.num
+            self.num+=1
+            return val
+        else:
+            raise StopIteration # this is raising exception.
+values=topten()
+print(next(values))
+print(next(values))
+print(values.__next__())
+print(next(values))
+for i in values:
+    print(i)
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Process finished with exit code 0
+=========================================================================================================
+for loop also know the previous value displayed and displays the next values.
