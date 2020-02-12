@@ -11,7 +11,7 @@ Process finished with exit code 0
 a=3
 b=83
 print(a+b)
-print(int.__add__(a,b))
+print(int.__add__(a,b)) #here the numbers are integers so this is of class int.
 output:
 /home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
 86
@@ -21,3 +21,31 @@ Process finished with exit code 0
 ======================================
 even we use just a+b internally it is calling __add__ method,for -, it calls __sub__ , for * , it calls __mul__ .
 ====================================================================================================================
+
+a='3'
+b='83'
+print(a+b)
+print(int.__add__(a,b))
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 5, in <module>
+    print(int.__add__(a,b))
+TypeError: descriptor '__add__' requires a 'int' object but received a 'str'
+383
+
+Process finished with exit code 1
+=======================================
+
+a='3'
+b='83'
+print(a+b)
+print(str.__add__(a,b))
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+383
+383
+
+Process finished with exit code 0
+===========================================
