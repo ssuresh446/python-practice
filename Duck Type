@@ -45,3 +45,34 @@ running
 
 Process finished with exit code 0
 ============================================
+class pycharm:
+    def execute(self):
+        print('compiling')
+        print('running')
+class laptop:
+    def code(self,ide):
+        ide.execute()
+class myowneditor:
+    def execute(self):
+        print('spell checking')
+        print('debugging')
+        print('compiling')
+        print('running')
+lap1=laptop()
+ide=pycharm()
+lap1.code(ide)
+ide=myowneditor()
+lap2=laptop()
+ide=myowneditor()
+lap2.code(ide)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+compiling
+running
+spell checking
+debugging
+compiling
+running
+
+Process finished with exit code 0
