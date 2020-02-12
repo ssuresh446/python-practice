@@ -1,0 +1,80 @@
+f=open('2.py','r') #to open a file, 'r' is mood, read , write etc
+print(f)
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+<_io.TextIOWrapper name='2.py' mode='r' encoding='UTF-8'>
+
+Process finished with exit code 0
+
+=======================================
+f=open('2.py','r') #to open a file, 'r' is mood, read , write etc
+print(f.read())
+
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+class software_company:
+    def java(self):
+        print('there are 10 jeva developers are working in company')
+    def dotnet(self):
+        print('there are 15 dotnet developers are working in company')
+    def python(self):
+        print('there are 20 python developers are working in company')
+dev1=software_company()
+dev2=software_company()
+dev3=software_company()
+print('the following are the types of individuals')
+print(type(dev1))
+print(type(dev2))
+print(type(dev3))
+print()
+software_company.java(dev1)
+software_company.dotnet(dev2)
+software_company.python(dev3)
+
+dev1.java()
+dev2.dotnet()
+dev3.python()
+a=5
+a.bit_length()
+print()
+
+
+Process finished with exit code 0
+==========================================
+f=open('2.py','r') #to open a file, 'r' is mood, read , write etc
+print(f.readline()) #displays first line
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+class software_company:
+
+
+Process finished with exit code 0
+====================================
+f=open('2.py','r') #to open a file, 'r' is mood, read , write etc
+print(f.readline())
+print(f.readline())
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+class software_company:
+
+    def java(self):
+
+
+Process finished with exit code 0
+========================================================
+# we can display particular line also
+f=open('2.py','r') #to open a file, 'r' is mood, read , write etc
+print(f.readline(4))
+
+
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+clas
+
+Process finished with exit code 0
+============================================================
