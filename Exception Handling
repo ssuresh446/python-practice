@@ -5,3 +5,45 @@
 #but the user might give wrong input while compilation(4/0).
 #compile time error is most easiest error for developer.
 #runtime error is difficult but it is due to input given by user but not out mistake.
+
+a=5 #there will be no error due to these 2 steps.
+b=2
+print(a/b) #error due to this step.
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+2.5
+
+Process finished with exit code 0
+====================================================================
+a=5 #there will be no error due to these 2 steps.
+b=0
+print(a/b) #error due to this step.
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 3, in <module>
+    print(a/b) #error due to this step.
+ZeroDivisionError: division by zero
+
+Process finished with exit code 1
+======================================================================
+ZeroDivisionError is the error, due to the value given by user is 0
+====================================================================================
+a=5 #there will be no error due to these 2 steps.
+b=p
+print(a/b) #error due to this step.
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 2, in <module>
+    b=p
+NameError: name 'p' is not defined
+
+Process finished with exit code 1
+
+==================================================================================
+NameError is the error due the value given by user is 'p'
+====================================================================================================
