@@ -76,3 +76,5 @@ compiling
 running
 
 Process finished with exit code 0
+===========================================================
+as it is dynamic typing..whatever the ide selected, then it gives the output provided that class should have execute method
