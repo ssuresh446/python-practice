@@ -104,3 +104,67 @@ Process finished with exit code 0
 ============================================
 if we want to add 2 students, we need to overload operator of +. because student class dont know what is + means , we dont have inbuilt class so we created our own class.
 =============================================
+class student:
+    def __init__(self,m1,m2):
+        self.m1=m1
+        self.m2=m2
+    def __add__(self, other):
+        m1=self.m1+other.m1
+        m2=self.m2+other.m2
+        s3=student(m1,m2)
+        return s3
+
+s1=student(23,39)
+s2=student(34,75)
+s3=s1+s2
+print(s3)
+print(s3.m1)
+if s1>s2:
+    print('s1 win')
+else:
+    print('s2 win')
+    output:
+ /home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+Traceback (most recent call last):
+  File "/home/ansible-practice/PycharmProjects/test/1.py", line 16, in <module>
+    if s1>s2:
+TypeError: '>' not supported between instances of 'student' and 'student'
+<__main__.student object at 0x7f2f19ec0160>
+57
+
+Process finished with exit code 1
+===========================================
+so we need to write method for >
+==============================================
+class student:
+    def __init__(self,m1,m2):
+        self.m1=m1
+        self.m2=m2
+    def __add__(self, other):
+        m1=self.m1+other.m1
+        m2=self.m2+other.m2
+        s3=student(m1,m2)
+        return s3
+    def __gt__(self, other):
+        r1=self.m1+other.m1
+        r2=self.m2+other.m2
+        if r1>r2:
+            return True
+        else:
+            return False
+s1=student(23,39)
+s2=student(34,75)
+s3=s1+s2
+print(s3)
+print(s3.m1)
+if s1>s2:
+    print('s1 win')
+else:
+    print('s2 win')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/1.py
+<__main__.student object at 0x7fa0c7cc7208>
+57
+s2 win
+
+Process finished with exit code 0
