@@ -1,0 +1,42 @@
+https://www.youtube.com/watch?v=UldZOLylez4&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=72
+
+def search(a,n):
+    global i
+    for i in range(len(a)):
+        if a[i]==n:
+            return True
+    else:
+        return False
+a=[3,5,87,3,78,9]
+n=78
+if search(a,n):
+    print('found at position : ',i)
+else:
+    print('not found')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/new.py
+found at position :  4
+
+Process finished with exit code 0
+==========================================================
+def search(a,n):
+    global i
+    i=0
+    while i<len(a):
+        if a[i]==n:
+            return True
+        i+=1
+    return False
+
+a=[3,5,87,3,78,9]
+n=78
+if search(a,n):
+    print('found at position : ',i)
+else:
+    print('not found')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/new.py
+found at position :  4
+
+Process finished with exit code 0
+============================================================
