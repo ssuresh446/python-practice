@@ -1,0 +1,40 @@
+def search(l,n):
+    d=0
+    u=len(l)-1
+    while d<=u:
+        global m
+        m=(d+u)//2
+        if l[m]==n:
+            return True
+        else:
+            if l[m]<n:
+                d=m+1
+            else:
+                u=m-1
+    return False
+k=[23,54,6,4,89,6,56,90]
+l=sorted(k)
+print(l)
+n=int(input('enter the value you want to search : '))
+print(n)
+if search(l,n):
+    print('found at ',m)
+else:
+    print('not found')
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/new.py
+[4, 6, 6, 23, 54, 56, 89, 90]
+enter the value you want to search : 90
+90
+found at  7
+
+Process finished with exit code 0
+
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/new.py
+[4, 6, 6, 23, 54, 56, 89, 90]
+enter the value you want to search : 890
+890
+not found
+
+Process finished with exit code 0
+======================================================
