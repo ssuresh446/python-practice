@@ -1,0 +1,48 @@
+k=[23,54,6,4,89,6,56,90,890,0,1]
+for i in range(len(k)):
+    minpos=i
+    for j in range(i,len(k)):
+        if k[j]<k[minpos]:
+            minpos=j
+    k[i],k[minpos]=k[minpos],k[i]
+print(k)
+
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/new.py
+[0, 1, 4, 6, 6, 23, 54, 56, 89, 90, 890]
+
+Process finished with exit code 0
+
+=====================================
+if we create a function
+=====================================
+k=[23,54,6,4,89,6,56,90,890,0,1]
+def selectionsort():
+    for i in range(len(k)):
+        minpos=i
+        for j in range(i,len(k)):
+            if k[j]<k[minpos]:
+                minpos=j
+        k[i],k[minpos]=k[minpos],k[i]
+        print(k)
+    print(k)
+selectionsort()
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/new.py
+[0, 54, 6, 4, 89, 6, 56, 90, 890, 23, 1]
+[0, 1, 6, 4, 89, 6, 56, 90, 890, 23, 54]
+[0, 1, 4, 6, 89, 6, 56, 90, 890, 23, 54]
+[0, 1, 4, 6, 89, 6, 56, 90, 890, 23, 54]
+[0, 1, 4, 6, 6, 89, 56, 90, 890, 23, 54]
+[0, 1, 4, 6, 6, 23, 56, 90, 890, 89, 54]
+[0, 1, 4, 6, 6, 23, 54, 90, 890, 89, 56]
+[0, 1, 4, 6, 6, 23, 54, 56, 890, 89, 90]
+[0, 1, 4, 6, 6, 23, 54, 56, 89, 890, 90]
+[0, 1, 4, 6, 6, 23, 54, 56, 89, 90, 890]
+[0, 1, 4, 6, 6, 23, 54, 56, 89, 90, 890]
+[0, 1, 4, 6, 6, 23, 54, 56, 89, 90, 890]
+
+Process finished with exit code 0
+===================================================================
