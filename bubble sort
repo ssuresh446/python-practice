@@ -1,0 +1,31 @@
+k=[23,54,6,4,89,6,56,90,890,0]
+for i in range(len(k)):
+        for j in range(len(k)-1):
+            if k[j]>k[j+1]:
+                k[j],k[j+1]=k[j+1],k[j]
+print(k)
+
+
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/new.py
+[0, 4, 6, 6, 23, 54, 56, 89, 90, 890]
+
+Process finished with exit code 0
+
+========================================
+k=[23,54,6,4,89,6,56,90,890,0]
+def sort():
+
+    for i in range(len(k)):
+        for j in range(len(k)-1):
+            if k[j]>k[j+1]:
+                k[j],k[j+1]=k[j+1],k[j]
+    print(k)
+
+sort()
+output:
+/home/ansible-practice/PycharmProjects/test/venv/bin/python /home/ansible-practice/PycharmProjects/test/new.py
+[0, 4, 6, 6, 23, 54, 56, 89, 90, 890]
+
+Process finished with exit code 0
+=======================================
